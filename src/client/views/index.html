@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Planner</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="main-title">Where would you like to travel?</h1>
+  </header>
+
+  <main>
+    <form id="trip-form">
+      <label for="trip-destination">Destination:</label>
+      <input type="text" id="trip-destination" name="destination" required>
+      
+      <label for="trip-date">Travel Date:</label>
+      <input type="date" id="trip-date" name="date" required>
+      
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- 
+    <section id="output">
+      <h2>Results:</h2>
+      <p id="result-polarity"></p>
+      <p id="result-subjectivity"></p>
+      <p id="result-text"></p>
+    </section> 
+    -->
+  </main>
+
+  <!-- 
+  <script src="../js/app.js"></script> 
+  -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registered successfully, scope:', registration.scope);
+          })
+          .catch(err => {
+            console.error('Failed to register Service Worker:', err);
+          });
+      });
+    }
+  </script>
+
+</body>
+
+</html>
