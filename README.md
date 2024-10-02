@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 1. Project Title
 Travel App 
 
@@ -56,3 +57,6 @@ npm run test
 
 # 9. Contributing
 Contributions are welcome! Fork the repository and submit a pull request with your changes.
+=======
+# frontend
+>>>>>>> f2ab3f7079d47d21a9c41c8e9b0ebad5a2b15f78
